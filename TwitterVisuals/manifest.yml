@@ -1,0 +1,6 @@
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: twitter-tweets-visuals
+  name: twitter-tweets-visuals
+  memory: 64M
+  stack: cflinuxfs2
