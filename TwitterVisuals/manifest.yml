@@ -1,6 +1,7 @@
 ---
 applications:
-- host: twitter-tweets-visuals-$chaitumanne
+- buildpack: https://github.com/cloudfoundry/java-buildpack
+  host: twitter-tweets-visuals-$chaitumanne
   name: twitter-tweets-visuals
   memory: 256M
   instances: 1
