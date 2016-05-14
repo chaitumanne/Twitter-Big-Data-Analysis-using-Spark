@@ -1,0 +1,7 @@
+---
+applications:
+- host: twitter-tweets-visuals-$chaitumanne
+  name: twitter-tweets-visuals
+  memory: 256M
+  instances: 1
+  disk_quota: 512M
