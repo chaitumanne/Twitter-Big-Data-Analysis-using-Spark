@@ -1,8 +1,0 @@
----
-applications:
-- path: .
-  domain: mybluemix.net
-  host: twitter-tweets-visuals
-  name: twitter-tweets-visuals
-  memory: 256M
-  instances: 1
