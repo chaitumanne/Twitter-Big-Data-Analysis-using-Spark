@@ -1,9 +1,8 @@
 ---
 applications:
-- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  host: twitter-tweets-visuals-$chaitumanne
+- path: .
+  domain: mybluemix.net
+  host: twitter-tweets-visuals
   name: twitter-tweets-visuals
   memory: 256M
   instances: 1
-  disk_quota: 512M
-  stack: cflinuxfs2
