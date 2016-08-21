@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {packages: ['map']});
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap () {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Address');
+      data.addColumn('string', 'Location');
+      data.addColumn('string', 'Marker')
+
+      data.addRows([
+        ['Los Angeles CA, United States', 'Los Angeles',   'blue' ],
+        ['New York City NY, United States', 'New York',   'blue' ],
+        ['Seattle WA, United States',      'Seattle',   'green'],
+        ['Manhattan NY, United States',    'Manhattan', 'pink' ],
+        ['Georgia USA, United States',  'Georgia',     'green'],
+        ['Florida USA, United States',    'Florida', 'green'],
+        ['Houston TX, United States',       'Houston',    'blue' ],
+        ['Chicago IL, United States',     'Chicago',  'pink' ],
+        ['Texas USA, United States',        'Texas',     'blue' ],
+        ]);
+      var url = 'http://icons.iconarchive.com/icons/icons-land/vista-map-markers/48/';
+
+      var options = {
+        zoomLevel: 5,
+        showTip: true,
+        useMapTypeControl: true,
+        icons: {
+          blue: {
+            normal:   url + 'Map-Marker-Ball-Azure-icon.png',
+            selected: url + 'Map-Marker-Ball-Right-Azure-icon.png'
+          },
+          green: {
+            normal:   url + 'Map-Marker-Push-Pin-1-Chartreuse-icon.png',
+            selected: url + 'Map-Marker-Push-Pin-1-Right-Chartreuse-icon.png'
+          },
+          pink: {
+            normal:   url + 'Map-Marker-Ball-Pink-icon.png',
+            selected: url + 'Map-Marker-Ball-Right-Pink-icon.png'
+          }
+        }
+      };
+      var map = new google.visualization.Map(document.getElementById('map_div'));
+          map.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+<div id="map_div" style="height: 100%; width: 100%"></div>
+</body>
+</html>

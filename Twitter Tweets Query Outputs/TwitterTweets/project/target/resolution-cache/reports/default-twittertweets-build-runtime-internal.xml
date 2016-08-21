@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="twittertweets-build"
+		revision="0.1-SNAPSHOT"
+		extra-sbtVersion="0.13"
+		extra-scalaVersion="2.10"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160411214718"/>
+	<dependencies>
+		<module organisation="com.earldouglas" name="xsbt-web-plugin">
+			<revision name="1.0.0" status="release" pubdate="20141016120153" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="true" searched="true" default="false" conf="default(compile), compile" position="0">
+				<license name="BSD New" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="1531" time="855" location="C:\Users\VARSHA-PC\.ivy2\cache\scala_2.10\sbt_0.13\com.earldouglas\xsbt-web-plugin\ivy-1.0.0.xml" searched="true" original-local-location="C:\Users\VARSHA-PC\.ivy2\cache\scala_2.10\sbt_0.13\com.earldouglas\xsbt-web-plugin\ivy-1.0.0.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.earldouglas/xsbt-web-plugin/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="twittertweets-build" conf="optional, compile, runtime, runtime-internal" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.13" extra-scalaVersion="2.10"/>
+				<artifacts>
+					<artifact name="xsbt-web-plugin" type="jar" ext="jar" status="successful" details="" size="64643" time="1200" location="C:\Users\VARSHA-PC\.ivy2\cache\scala_2.10\sbt_0.13\com.earldouglas\xsbt-web-plugin\jars\xsbt-web-plugin-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.earldouglas/xsbt-web-plugin/scala_2.10/sbt_0.13/1.0.0/jars/xsbt-web-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,48 @@
+<html>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="springy.js"></script>
+<script src="springyui.js"></script>
+<script>
+var graph = new Springy.Graph();
+
+var topUser = graph.newNode({
+  label: 'Queen. J',
+  ondoubleclick: function() { console.log("Hello!"); }
+});
+var user1 = graph.newNode({label: 'Stilinski'});
+var user2 = graph.newNode({label: 'LayMY'});
+var user3 = graph.newNode({label: 'Anu ♏️.'});
+var user4 = graph.newNode({label: 'Prince Dougie'});
+var user5 = graph.newNode({label: 'Jeff KellyLowenstein'});
+var user6 = graph.newNode({label: 'Amjad'});
+var user7 = graph.newNode({label: 'soymilk'});
+var user8 = graph.newNode({label: 'Arnold Kumar'});
+var user9 = graph.newNode({label: 'William Miller'});
+
+graph.newEdge(topUser, user1, {color: '#00A0B0'});
+graph.newEdge(user1, topUser, {color: '#6A4A3C'});
+graph.newEdge(user1, user2, {color: '#CC333F'});
+graph.newEdge(user2, user4, {color: '#EB6841'});
+graph.newEdge(user1, user3, {color: '#EDC951'});
+graph.newEdge(user5, user6, {color: '#7DBE3C'});
+graph.newEdge(topUser, user6, {color: '#000000'});
+graph.newEdge(user6, user7, {color: '#00A0B0'});
+graph.newEdge(user4, user3, {color: '#6A4A3C'});
+graph.newEdge(topUser, user8, {color: '#CC333F'});
+graph.newEdge(user8, user6, {color: '#EB6841'});
+graph.newEdge(user9, user6, {color: '#EB6841'});
+
+jQuery(function(){
+  var springy = window.springy = jQuery('#springydemo').springy({
+    graph: graph,
+    nodeSelected: function(node){
+      console.log('Node selected: ' + JSON.stringify(node.data));
+    }
+  });
+});
+</script>
+
+<canvas id="springydemo" width="1000" height="600" />
+</body>
+</html>

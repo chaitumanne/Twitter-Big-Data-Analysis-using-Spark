@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TwitterTweets</title>
+	
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div>
+	<h3 style="color:blue">Principles of Big Data - Twitter Tweets Visualizaton
+	<img src="images/3.jpg" style="position:fixed;left:0;top:0;width:100%;height:100%">
+</div>
+<div>
+	<a href="#countries" data-rel="popup" data-position-to="window">
+		<img src="images/Country.jpg" title="Country Tweets" style="position:fixed;left:1%;top:11%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="countries">
+      <p><h3>Countris which tweeted more about entertainment!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/Countries.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#ReTweets" data-rel="popup" data-position-to="window">
+		<img src="images/ReTweet.jpg" title="Top 10 ReTweets" style="position:fixed;left:1%;top:22%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="ReTweets">
+      <p><h3>Users tweets which are retweeted more number of times!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/UserRetweets.jpg" style="width:900px;height:400px;">
+</div>
+
+<div>
+	<a href="#Languages" data-rel="popup" data-position-to="window">
+		<img src="images/Language.jpg" title="Famous Languages" style="position:fixed;left:1%;top:33%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="Languages">
+      <p><h3>Top 10 languages used to tweet!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/Languages.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#Urls" data-rel="popup" data-position-to="window">
+		<img src="images/url.jpg" title="Most frequent URLS" style="position:fixed;left:1%;top:44%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="Urls">
+      <p><h3>Users most preferable URLS used in their tweets!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/Urls.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#Verified" data-rel="popup" data-position-to="window">
+		<img src="images/Verify.jpg" title="Verified vs non-verified" style="position:fixed;left:1%;top:55%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="Verified">
+      <p><h3>Verified users v/s non-verified users!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/Verified.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#USPlaces" data-rel="popup" data-position-to="window">
+		<img src="images/USPlace.jpg" title="US places" style="position:fixed;left:1%;top:66%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="USPlaces">
+      <p><h3>Analysis on US states which tweeted more on movies from which place!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/USPlaces.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#Users" data-rel="popup" data-position-to="window">
+		<img src="images/User.jpg" title="Most followed users" style="position:fixed;left:1%;top:77%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="Users">
+      <p><h3>Top most users followed on twitter!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/Users.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<a href="#TimeZone" data-rel="popup" data-position-to="window">
+		<img src="images/TimeZones.jpg" title="Top timezones" style="position:fixed;left:1%;top:88%;width:10%;height:10%">
+	</a>
+</div>
+<div data-role="popup" id="TimeZone">
+      <p><h3>Most tweet tweeted from which timezone!</p> 
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	  <img src="images/TimeZone.jpg" style="width:800px;height:400px;">
+</div>
+
+<div>
+	<h3 style="position:fixed;left:80%;top:80%;color:red"><i>Prepared by:</i><br>
+	<a href="https://github.com/cm7cd/TwitterTweetsVisuals" style="font-size:12pt;font-family:TimesNewRoman;color:blue"> Chaitanya Sai Manne<br>Karthik Ponnuru <br> Raghu Pavan Vallankonda </a>
+</div>
+</body>
+</html>
