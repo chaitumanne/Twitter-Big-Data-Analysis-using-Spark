@@ -1,4 +1,4 @@
 # Twitter Tweets analysis on entertainement category using Spark
-This a web application used to analyze the tweets based on the Query provided. We have provided queries like Top 10 users following, Top most languages used to tweets, Most tweets tweeted from which country etc. All this are visualized using graphs, maps, bars and charts. We have downloaded the tweets using word count program and TwitterAPI and done querying on this using SparkSQL.
+This a web application used to analyze the tweets generated using TwitterAPI based on the entertainment catergory. Using SparkSQL we have provided queries like finding the Top 10 users following, Top most languages used to tweets, Most tweets tweeted from which country etc. All these results are visualized in the form of graphs, maps, bars, charts etc. Finally, deployed in Amazon Web Services(AWS).
 
-http://aws-website-wwwtwiitertweetschaiedu-nq7l1.s3-website-us-east-1.amazonaws.com/
+https://d3hmbr6rx3ajaz.cloudfront.net/
